@@ -7,6 +7,7 @@
     <title>Payoo Bank</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -26,21 +27,21 @@
                                         <label class="label">
                                             <span class="label-text">Phone Number</span>
                                         </label>
-                                        <input type="text" placeholder="Your Phone Number" class="input input-bordered"
-                                            required />
+                                        <input id="phone-number" type="text" placeholder="Your Phone Number"
+                                            class="input input-bordered" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text">Pin</span>
                                         </label>
                                         <input type="pin" placeholder="Enter Your Pin" class="input input-bordered"
-                                            required />
+                                            autocomplete="off" required />
                                         <label class="label">
                                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
-                                        <button class="btn btn-primary">Login</button>
+                                        <button id="btn-login" class="btn btn-primary">Login</button>
                                     </div>
                                 </form>
                             </div>
@@ -50,6 +51,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
